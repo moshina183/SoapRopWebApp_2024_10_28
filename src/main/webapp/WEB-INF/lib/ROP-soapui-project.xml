@@ -1,0 +1,1528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="9692f690-d077-42ca-8bbc-fc74ce29f1b8" activeEnvironment="Default" name="ROP" resourceRoot="" soapui-version="5.7.2" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="88d2dc8d-b7ea-4bab-b976-77b034835481" wsaVersion="NONE" name="ErpObjectDFFUpdateServiceSoapHttp" type="wsdl" bindingName="{http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/}ErpObjectDFFUpdateServiceSoapHttp" soapVersion="1_1" anonymous="optional" definition="https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService</con:endpoint></con:endpoints><con:operation id="90e6a88f-f9e8-41a2-9bf9-6d8bbe57b9d4" isOneWay="false" action="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/updateDffEntityDetails" name="updateDffEntityDetails" bindingOperationName="updateDffEntityDetails" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e39b0e3e-6558-4c3a-91dd-59016487b62f" name="Request1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:typ="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/types/" xmlns:erp="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <typ:updateDffEntityDetails>
+         <typ:operationMode>SINGLE</typ:operationMode>
+         <typ:object>
+            <erp:EntityName>Receivables Invoice Cash Receipt</erp:EntityName>
+            <erp:ContextValue>#NULL</erp:ContextValue>
+            <erp:UserKeyA>123450001</erp:UserKeyA>
+            <erp:UserKeyB>300000022034399</erp:UserKeyB>
+            <erp:UserKeyC>#NULL</erp:UserKeyC>
+            <erp:UserKeyD>#NULL</erp:UserKeyD>
+            <erp:UserKeyE>#NULL</erp:UserKeyE>
+            <erp:UserKeyF>#NULL</erp:UserKeyF>
+            <erp:UserKeyG>#NULL</erp:UserKeyG>
+            <erp:UserKeyH>#NULL</erp:UserKeyH>
+            <!--Optional:-->
+            <erp:DFFAttributes>{"ATTRIBUTE10":"TEST123"}</erp:DFFAttributes>
+         </typ:object>
+      </typ:updateDffEntityDetails>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:username>SFIntegration</con:username><con:password>Gl@d1at0r</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/updateDffEntityDetails"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="6e9e52db-7cb8-47e9-ab7d-7d4d14c2a092" isOneWay="false" action="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/updateDffEntityDetailsAsync" name="updateDffEntityDetailsAsync" bindingOperationName="updateDffEntityDetailsAsync" type="One-Way" inputName="" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="356c3797-9603-4b64-8b4f-491584f9f66c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:typ="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/types/" xmlns:erp="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <typ:updateDffEntityDetailsAsync>\r
+         <!--Optional:-->\r
+         <typ:document>\r
+            <erp:Content>cid:1153647753749</erp:Content>\r
+            <erp:FileName>?</erp:FileName>\r
+            <!--Optional:-->\r
+            <erp:ContentType>?</erp:ContentType>\r
+            <!--Optional:-->\r
+            <erp:DocumentTitle>?</erp:DocumentTitle>\r
+            <!--Optional:-->\r
+            <erp:DocumentAuthor>?</erp:DocumentAuthor>\r
+            <!--Optional:-->\r
+            <erp:DocumentSecurityGroup>?</erp:DocumentSecurityGroup>\r
+            <!--Optional:-->\r
+            <erp:DocumentAccount>?</erp:DocumentAccount>\r
+            <!--Optional:-->\r
+            <erp:DocumentName>?</erp:DocumentName>\r
+            <!--Optional:-->\r
+            <erp:DocumentId>?</erp:DocumentId>\r
+         </typ:document>\r
+         <typ:operationMode>?</typ:operationMode>\r
+         <!--Optional:-->\r
+         <typ:object>\r
+            <!--Optional:-->\r
+            <erp:EntityName>?</erp:EntityName>\r
+            <!--Optional:-->\r
+            <erp:ContextValue>?</erp:ContextValue>\r
+            <!--Optional:-->\r
+            <erp:UserKeyA>?</erp:UserKeyA>\r
+            <!--Optional:-->\r
+            <erp:UserKeyB>?</erp:UserKeyB>\r
+            <!--Optional:-->\r
+            <erp:UserKeyC>?</erp:UserKeyC>\r
+            <!--Optional:-->\r
+            <erp:UserKeyD>?</erp:UserKeyD>\r
+            <!--Optional:-->\r
+            <erp:UserKeyE>?</erp:UserKeyE>\r
+            <!--Optional:-->\r
+            <erp:UserKeyF>?</erp:UserKeyF>\r
+            <!--Optional:-->\r
+            <erp:UserKeyG>?</erp:UserKeyG>\r
+            <!--Optional:-->\r
+            <erp:UserKeyH>?</erp:UserKeyH>\r
+            <!--Optional:-->\r
+            <erp:DFFAttributes>?</erp:DFFAttributes>\r
+         </typ:object>\r
+         <!--Optional:-->\r
+         <typ:notificationCode>?</typ:notificationCode>\r
+         <!--Optional:-->\r
+         <typ:callbackURL>?</typ:callbackURL>\r
+      </typ:updateDffEntityDetailsAsync>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/updateDffEntityDetailsAsync"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="df59f1ac-51d8-4fbe-a18f-10b8a6c53a1e" wsaVersion="NONE" name="ErpObjectDFFUpdateServiceResponseBinding" type="wsdl" bindingName="{http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/}ErpObjectDFFUpdateServiceResponseBinding" soapVersion="1_1" anonymous="optional" definition="https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService?wsdl"><con:part><con:url>https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="ErpObjectDFFUpdateService" targetNamespace="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/" xmlns:plnk="http://schemas.xmlsoap.org/ws/2003/05/partner-link/" xmlns:errors="http://xmlns.oracle.com/adf/svc/errors/" xmlns:orafault="http://xmlns.oracle.com/oracleas/schema/oracle-fault-11_0" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:types="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/types/">
+  <wsdl:documentation xmlns:oer="http://xmlns.oracle.com/oer">
+    <name>ERP Object Descriptive Flexfield Update Service</name>
+    <description>Web service will have Operations for update DFF attributes</description>
+    <docCategories>
+      <category>External</category>
+    </docCategories>
+    <oer:lifecycle>Active</oer:lifecycle>
+    <oer:compatibility>Supported - Backward Compatibility Assured</oer:compatibility>
+    <oer:operation name="updateDffEntityDetails">
+      <description>Update the Attributes of Business Object corresponding DFF Attributes specified by User</description>
+      <oer:parameters>
+        <oer:parameter name="document" description="List of elements, each containing the details of the Object Details zip to be uploaded. The details include the file content, file name, content type, file title, author, security group, and account. In case of single update this attribute will be NULL."/>
+        <oer:parameter name="operationMode" description="Mode to interpret if it is a single or bulk upload. (BULK or SINGLE -- if nothing or #NULL is passed ? BULK is considered)"/>
+        <oer:parameter name="object" description="List of elements, each containing the details of the ERP Object to be updated. The details include the entity name, context value, user key attribute values, DFF attribute name value pair."/>
+        <oer:return description="Request Id of the Ess Job submitted for Bulk upload. 'Success' or 'Failure' in case of single update."/>
+      </oer:parameters>
+    </oer:operation>
+  </wsdl:documentation>
+  <plnk:partnerLinkType name="ErpObjectDFFUpdateService">
+    <plnk:role name="ErpObjectDFFUpdateServiceProvider">
+      <plnk:portType name="tns:ErpObjectDFFUpdateService"/>
+    </plnk:role>
+    <plnk:role name="ErpObjectDFFUpdateServiceRequestor">
+      <plnk:portType name="tns:ErpObjectDFFUpdateServiceResponse"/>
+    </plnk:role>
+  </plnk:partnerLinkType>
+  <wsp:Policy wsu:Id="ErpObjectDFFUpdateServiceResponse_Fault_Policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"/>
+  <wsp:Policy wsu:Id="ErpObjectDFFUpdateServiceResponse_Input_Policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
+    <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+      <sp:Body/>
+      <sp:Header Namespace="http://www.w3.org/2005/08/addressing"/>
+      <sp:Header Namespace="http://schemas.xmlsoap.org/ws/2004/08/addressing"/>
+      <sp:Header Name="fmw-context" Namespace="http://xmlns.oracle.com/fmw/context/1.0"/>
+    </sp:SignedParts>
+    <sp:EncryptedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+      <sp:Body/>
+      <sp:Header Name="fmw-context" Namespace="http://xmlns.oracle.com/fmw/context/1.0"/>
+    </sp:EncryptedParts>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="ErpObjectDFFUpdateServiceResponse_Output_Policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
+    <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+      <sp:Body/>
+    </sp:SignedParts>
+    <sp:EncryptedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+      <sp:Body/>
+    </sp:EncryptedParts>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="ErpObjectDFFUpdateServiceSoapHttpPort_Fault_Policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
+    <wsp:ExactlyOne>
+      <wsp:All/>
+      <wsp:All/>
+      <wsp:All/>
+      <wsp:All/>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="ErpObjectDFFUpdateServiceSoapHttpPort_Input_Policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <sp:Body/>
+          <sp:Header Namespace="http://www.w3.org/2005/08/addressing"/>
+          <sp:Header Namespace="http://schemas.xmlsoap.org/ws/2004/08/addressing"/>
+          <sp:Header Name="fmw-context" Namespace="http://xmlns.oracle.com/fmw/context/1.0"/>
+        </sp:SignedParts>
+        <sp:EncryptedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <sp:Body/>
+          <sp:Header Name="fmw-context" Namespace="http://xmlns.oracle.com/fmw/context/1.0"/>
+        </sp:EncryptedParts>
+      </wsp:All>
+      <wsp:All>
+        <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <sp:Body/>
+          <sp:Header Namespace="http://www.w3.org/2005/08/addressing"/>
+          <sp:Header Namespace="http://schemas.xmlsoap.org/ws/2004/08/addressing"/>
+          <sp:Header Name="fmw-context" Namespace="http://xmlns.oracle.com/fmw/context/1.0"/>
+        </sp:SignedParts>
+        <sp:EncryptedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <sp:Body/>
+          <sp:Header Name="fmw-context" Namespace="http://xmlns.oracle.com/fmw/context/1.0"/>
+        </sp:EncryptedParts>
+      </wsp:All>
+      <wsp:All>
+        <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <sp:Body/>
+          <sp:Header Namespace="http://www.w3.org/2005/08/addressing"/>
+          <sp:Header Namespace="http://schemas.xmlsoap.org/ws/2004/08/addressing"/>
+          <sp:Header Name="fmw-context" Namespace="http://xmlns.oracle.com/fmw/context/1.0"/>
+          <sp:Header Name="SignatureConfirmation" Namespace="http://docs.oasis-open.org/wss/oasis-wss-wssecurity-secext-1.1.xsd"/>
+        </sp:SignedParts>
+        <sp:EncryptedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <sp:Body/>
+          <sp:Header Name="fmw-context" Namespace="http://xmlns.oracle.com/fmw/context/1.0"/>
+        </sp:EncryptedParts>
+      </wsp:All>
+      <wsp:All>
+        <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <sp:Body/>
+          <sp:Header Namespace="http://www.w3.org/2005/08/addressing"/>
+          <sp:Header Namespace="http://schemas.xmlsoap.org/ws/2004/08/addressing"/>
+          <sp:Header Name="fmw-context" Namespace="http://xmlns.oracle.com/fmw/context/1.0"/>
+        </sp:SignedParts>
+        <sp:EncryptedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <sp:Body/>
+          <sp:Header Name="fmw-context" Namespace="http://xmlns.oracle.com/fmw/context/1.0"/>
+        </sp:EncryptedParts>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="ErpObjectDFFUpdateServiceSoapHttpPort_Output_Policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <sp:Body/>
+        </sp:SignedParts>
+        <sp:EncryptedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <sp:Body/>
+        </sp:EncryptedParts>
+      </wsp:All>
+      <wsp:All>
+        <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <sp:Body/>
+        </sp:SignedParts>
+        <sp:EncryptedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <sp:Body/>
+        </sp:EncryptedParts>
+      </wsp:All>
+      <wsp:All>
+        <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <sp:Body/>
+        </sp:SignedParts>
+        <sp:EncryptedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <sp:Body/>
+        </sp:EncryptedParts>
+      </wsp:All>
+      <wsp:All>
+        <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <sp:Body/>
+        </sp:SignedParts>
+        <sp:EncryptedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <sp:Body/>
+        </sp:EncryptedParts>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="fast_infoset_service_policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
+    <wsOptfiser:OptimizedFastInfosetSerialization enabled="true" xmlns:wsOptfiser="http://java.sun.com/xml/ns/wsit/2006/09/policy/fastinfoset/service"/>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="wsaddr_policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
+    <wsaw:UsingAddressing xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl"/>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="wss11_saml_or_username_token_with_message_protection_service_policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:SymmetricBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:ProtectionToken>
+              <wsp:Policy>
+                <sp:X509Token sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/Never">
+                  <wsp:Policy>
+                    <sp:RequireThumbprintReference/>
+                    <sp:WssX509V3Token11/>
+                  </wsp:Policy>
+                </sp:X509Token>
+              </wsp:Policy>
+            </sp:ProtectionToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic128/>
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Lax/>
+              </wsp:Policy>
+            </sp:Layout>
+            <sp:IncludeTimestamp/>
+            <sp:ProtectTokens/>
+            <sp:OnlySignEntireHeadersAndBody/>
+          </wsp:Policy>
+        </sp:SymmetricBinding>
+        <sp:SignedSupportingTokens xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:SamlToken sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient">
+              <wsp:Policy>
+                <sp:WssSamlV11Token11/>
+              </wsp:Policy>
+            </sp:SamlToken>
+          </wsp:Policy>
+        </sp:SignedSupportingTokens>
+        <sp:EndorsingSupportingTokens xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:X509Token sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient">
+              <wsp:Policy>
+                <sp:WssX509V3Token11/>
+              </wsp:Policy>
+            </sp:X509Token>
+          </wsp:Policy>
+        </sp:EndorsingSupportingTokens>
+        <sp:Wss11 xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:MustSupportRefKeyIdentifier/>
+            <sp:MustSupportRefIssuerSerial/>
+            <sp:MustSupportRefThumbprint/>
+            <sp:MustSupportRefEncryptedKey/>
+            <sp:RequireSignatureConfirmation/>
+          </wsp:Policy>
+        </sp:Wss11>
+      </wsp:All>
+      <wsp:All>
+        <sp:SymmetricBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:ProtectionToken>
+              <wsp:Policy>
+                <sp:X509Token sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/Never">
+                  <wsp:Policy>
+                    <sp:RequireThumbprintReference/>
+                    <sp:WssX509V3Token11/>
+                  </wsp:Policy>
+                </sp:X509Token>
+              </wsp:Policy>
+            </sp:ProtectionToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic128Exn256/>
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Lax/>
+              </wsp:Policy>
+            </sp:Layout>
+            <sp:IncludeTimestamp/>
+            <sp:ProtectTokens/>
+            <sp:OnlySignEntireHeadersAndBody/>
+          </wsp:Policy>
+        </sp:SymmetricBinding>
+        <sp:SignedSupportingTokens xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:SamlToken sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient">
+              <wsp:Policy>
+                <sp:WssSamlV11Token11/>
+              </wsp:Policy>
+            </sp:SamlToken>
+          </wsp:Policy>
+        </sp:SignedSupportingTokens>
+        <sp:EndorsingSupportingTokens xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:X509Token sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient">
+              <wsp:Policy>
+                <sp:WssX509V3Token11/>
+              </wsp:Policy>
+            </sp:X509Token>
+          </wsp:Policy>
+        </sp:EndorsingSupportingTokens>
+        <sp:Wss11 xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:MustSupportRefKeyIdentifier/>
+            <sp:MustSupportRefIssuerSerial/>
+            <sp:MustSupportRefThumbprint/>
+            <sp:MustSupportRefEncryptedKey/>
+            <sp:RequireSignatureConfirmation/>
+          </wsp:Policy>
+        </sp:Wss11>
+      </wsp:All>
+      <wsp:All>
+        <sp:SymmetricBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:ProtectionToken>
+              <wsp:Policy>
+                <sp:X509Token sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/Never">
+                  <wsp:Policy>
+                    <sp:RequireThumbprintReference/>
+                    <sp:WssX509V3Token11/>
+                  </wsp:Policy>
+                </sp:X509Token>
+              </wsp:Policy>
+            </sp:ProtectionToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic128/>
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Lax/>
+              </wsp:Policy>
+            </sp:Layout>
+            <sp:IncludeTimestamp/>
+            <sp:OnlySignEntireHeadersAndBody/>
+          </wsp:Policy>
+        </sp:SymmetricBinding>
+        <sp:SignedSupportingTokens xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:UsernameToken sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient">
+              <wsp:Policy>
+                <sp:WssUsernameToken10/>
+              </wsp:Policy>
+            </sp:UsernameToken>
+          </wsp:Policy>
+        </sp:SignedSupportingTokens>
+        <sp:Wss11 xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:MustSupportRefKeyIdentifier/>
+            <sp:MustSupportRefIssuerSerial/>
+            <sp:MustSupportRefThumbprint/>
+            <sp:MustSupportRefEncryptedKey/>
+            <sp:RequireSignatureConfirmation/>
+          </wsp:Policy>
+        </sp:Wss11>
+      </wsp:All>
+      <wsp:All>
+        <sp:SymmetricBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:ProtectionToken>
+              <wsp:Policy>
+                <sp:X509Token sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/Never">
+                  <wsp:Policy>
+                    <sp:RequireThumbprintReference/>
+                    <sp:WssX509V3Token11/>
+                  </wsp:Policy>
+                </sp:X509Token>
+              </wsp:Policy>
+            </sp:ProtectionToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic128Exn256/>
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Lax/>
+              </wsp:Policy>
+            </sp:Layout>
+            <sp:IncludeTimestamp/>
+            <sp:OnlySignEntireHeadersAndBody/>
+          </wsp:Policy>
+        </sp:SymmetricBinding>
+        <sp:SignedSupportingTokens xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:UsernameToken sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient">
+              <wsp:Policy>
+                <sp:WssUsernameToken10/>
+              </wsp:Policy>
+            </sp:UsernameToken>
+          </wsp:Policy>
+        </sp:SignedSupportingTokens>
+        <sp:Wss11 xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:MustSupportRefKeyIdentifier/>
+            <sp:MustSupportRefIssuerSerial/>
+            <sp:MustSupportRefThumbprint/>
+            <sp:MustSupportRefEncryptedKey/>
+            <sp:RequireSignatureConfirmation/>
+          </wsp:Policy>
+        </sp:Wss11>
+      </wsp:All>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic128/>
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false">
+                  <wsp:Policy/>
+                </sp:HttpsToken>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Lax/>
+              </wsp:Policy>
+            </sp:Layout>
+            <sp:IncludeTimestamp/>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <sp:SupportingTokens xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:SamlToken sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient">
+              <wsp:Policy>
+                <sp:WssSamlV11Token10/>
+              </wsp:Policy>
+            </sp:SamlToken>
+          </wsp:Policy>
+        </sp:SupportingTokens>
+      </wsp:All>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic128/>
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false">
+                  <wsp:Policy/>
+                </sp:HttpsToken>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Lax/>
+              </wsp:Policy>
+            </sp:Layout>
+            <sp:IncludeTimestamp/>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <sp:SupportingTokens xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:SamlToken sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient">
+              <wsp:Policy>
+                <sp:WssSamlV20Token11/>
+              </wsp:Policy>
+            </sp:SamlToken>
+          </wsp:Policy>
+        </sp:SupportingTokens>
+      </wsp:All>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic128/>
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false">
+                  <wsp:Policy/>
+                </sp:HttpsToken>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Lax/>
+              </wsp:Policy>
+            </sp:Layout>
+            <sp:IncludeTimestamp/>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <sp:SupportingTokens xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:UsernameToken sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient">
+              <wsp:Policy>
+                <sp:WssUsernameToken10/>
+              </wsp:Policy>
+            </sp:UsernameToken>
+          </wsp:Policy>
+        </sp:SupportingTokens>
+      </wsp:All>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic128/>
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false">
+                  <wsp:Policy/>
+                </sp:HttpsToken>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Lax/>
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic128/>
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false">
+                  <wsp:Policy>
+                    <osp:HttpJwtAuthentication xmlns:osp="http://schemas.oracle.com/ws/2012/01/wssecuritypolicy"/>
+                  </wsp:Policy>
+                </sp:HttpsToken>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Lax/>
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="wss11_saml_token_with_message_protection_client_policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+    <sp:SymmetricBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+      <wsp:Policy>
+        <sp:ProtectionToken>
+          <wsp:Policy>
+            <sp:X509Token sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/Never">
+              <wsp:Policy>
+                <sp:RequireThumbprintReference/>
+                <sp:WssX509V3Token11/>
+              </wsp:Policy>
+            </sp:X509Token>
+          </wsp:Policy>
+        </sp:ProtectionToken>
+        <sp:AlgorithmSuite>
+          <wsp:Policy>
+            <sp:Basic128/>
+          </wsp:Policy>
+        </sp:AlgorithmSuite>
+        <sp:Layout>
+          <wsp:Policy>
+            <sp:Lax/>
+          </wsp:Policy>
+        </sp:Layout>
+        <sp:IncludeTimestamp/>
+        <sp:ProtectTokens/>
+        <sp:OnlySignEntireHeadersAndBody/>
+      </wsp:Policy>
+    </sp:SymmetricBinding>
+    <sp:SignedSupportingTokens xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+      <wsp:Policy>
+        <sp:SamlToken sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient">
+          <wsp:Policy>
+            <sp:WssSamlV11Token11/>
+          </wsp:Policy>
+        </sp:SamlToken>
+      </wsp:Policy>
+    </sp:SignedSupportingTokens>
+    <sp:EndorsingSupportingTokens xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+      <wsp:Policy>
+        <sp:X509Token sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient">
+          <wsp:Policy>
+            <sp:WssX509V3Token11/>
+          </wsp:Policy>
+        </sp:X509Token>
+      </wsp:Policy>
+    </sp:EndorsingSupportingTokens>
+    <sp:Wss11 xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+      <wsp:Policy>
+        <sp:MustSupportRefKeyIdentifier/>
+        <sp:MustSupportRefIssuerSerial/>
+        <sp:MustSupportRefThumbprint/>
+        <sp:MustSupportRefEncryptedKey/>
+        <sp:RequireSignatureConfirmation/>
+      </wsp:Policy>
+    </sp:Wss11>
+  </wsp:Policy>
+  <wsdl:import namespace="http://xmlns.oracle.com/adf/svc/errors/" location="https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService?WSDL=/META-INF/wsdl/ServiceException.wsdl"/>
+  <wsdl:types>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema">
+      <import namespace="http://xmlns.oracle.com/oracleas/schema/oracle-fault-11_0" schemaLocation="https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService?XSD=/META-INF/oracle-webservices-async-fault-11_0.xsd"/>
+      <import namespace="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/types/" schemaLocation="https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService?XSD=/oracle/apps/financials/commonModules/shared/model/erpIntegrationService/ErpObjectDFFUpdateService.xsd"/>
+    </schema>
+  </wsdl:types>
+  <wsdl:message name="ErpObjectDFFUpdateService_onFault">
+    <wsdl:part name="parameters" element="orafault:Fault"/>
+  </wsdl:message>
+  <wsdl:message name="ErpObjectDFFUpdateService_updateDffEntityDetailsAsyncResponse">
+    <wsdl:part name="parameters" element="types:updateDffEntityDetailsAsyncResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ErpObjectDFFUpdateService_updateDffEntityDetails">
+    <wsdl:part name="parameters" element="types:updateDffEntityDetails"/>
+  </wsdl:message>
+  <wsdl:message name="ErpObjectDFFUpdateService_updateDffEntityDetailsResponse">
+    <wsdl:part name="parameters" element="types:updateDffEntityDetailsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ErpObjectDFFUpdateService_updateDffEntityDetailsAsync">
+    <wsdl:part name="parameters" element="types:updateDffEntityDetailsAsync"/>
+  </wsdl:message>
+  <wsdl:portType name="ErpObjectDFFUpdateServiceResponse">
+    <wsdl:operation name="onFault">
+      <wsdl:input message="tns:ErpObjectDFFUpdateService_onFault" ns1:Action="http://xmlns.oracle.com/oracleas/schema/oracle-fault-11_0/Fault" xmlns:ns1="http://www.w3.org/2006/05/addressing/wsdl"/>
+    </wsdl:operation>
+    <wsdl:operation name="updateDffEntityDetailsAsyncResponse">
+      <wsdl:input message="tns:ErpObjectDFFUpdateService_updateDffEntityDetailsAsyncResponse" ns1:Action="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/updateDffEntityDetailsAsyncResponse" xmlns:ns1="http://www.w3.org/2006/05/addressing/wsdl"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ErpObjectDFFUpdateService">
+    <wsdl:documentation/>
+    <wsdl:operation name="updateDffEntityDetails">
+      <wsdl:input message="tns:ErpObjectDFFUpdateService_updateDffEntityDetails"/>
+      <wsdl:output message="tns:ErpObjectDFFUpdateService_updateDffEntityDetailsResponse"/>
+      <wsdl:fault name="ServiceException" message="errors:ServiceException"/>
+    </wsdl:operation>
+    <wsdl:operation name="updateDffEntityDetailsAsync">
+      <wsdl:input message="tns:ErpObjectDFFUpdateService_updateDffEntityDetailsAsync" ns1:Action="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/updateDffEntityDetailsAsync" xmlns:ns1="http://www.w3.org/2006/05/addressing/wsdl"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ErpObjectDFFUpdateServiceResponseBinding" type="tns:ErpObjectDFFUpdateServiceResponse">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsp:PolicyReference URI="#wss11_saml_token_with_message_protection_client_policy" wsdl:required="false" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"/>
+    <wsdl:operation name="onFault">
+      <soap:operation soapAction="http://xmlns.oracle.com/oracleas/schema/oracle-fault-11_0/Fault"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+        <wsp:PolicyReference URI="#ErpObjectDFFUpdateServiceResponse_Input_Policy" wsdl:required="false" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"/>
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="updateDffEntityDetailsAsyncResponse">
+      <soap:operation soapAction="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/updateDffEntityDetailsAsyncResponse"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+        <wsp:PolicyReference URI="#ErpObjectDFFUpdateServiceResponse_Input_Policy" wsdl:required="false" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"/>
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ErpObjectDFFUpdateServiceSoapHttp" type="tns:ErpObjectDFFUpdateService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsp:PolicyReference URI="#wss11_saml_or_username_token_with_message_protection_service_policy" wsdl:required="false" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"/>
+    <wsp:PolicyReference URI="#fast_infoset_service_policy" wsdl:required="false" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"/>
+    <wsp:PolicyReference URI="#wsaddr_policy" wsdl:required="false" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"/>
+    <wsdl:operation name="updateDffEntityDetails">
+      <soap:operation soapAction="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/updateDffEntityDetails"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+        <wsp:PolicyReference URI="#ErpObjectDFFUpdateServiceSoapHttpPort_Input_Policy" wsdl:required="false" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+        <wsp:PolicyReference URI="#ErpObjectDFFUpdateServiceSoapHttpPort_Output_Policy" wsdl:required="false" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"/>
+      </wsdl:output>
+      <wsdl:fault name="ServiceException">
+        <soap:fault name="ServiceException" use="literal"/>
+        <wsp:PolicyReference URI="#ErpObjectDFFUpdateServiceSoapHttpPort_Fault_Policy" wsdl:required="false" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateDffEntityDetailsAsync">
+      <soap:operation soapAction="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/updateDffEntityDetailsAsync"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+        <wsp:PolicyReference URI="#ErpObjectDFFUpdateServiceSoapHttpPort_Input_Policy" wsdl:required="false" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"/>
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ErpObjectDFFUpdateService">
+    <wsdl:port name="ErpObjectDFFUpdateServiceSoapHttpPort" binding="tns:ErpObjectDFFUpdateServiceSoapHttp">
+      <soap:address location="https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService"/>
+      <wsa:EndpointReference xmlns:wsa="http://www.w3.org/2005/08/addressing">
+        <wsa:Address>https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService</wsa:Address>
+        <wsid:Identity xmlns:wsid="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <dsig:KeyInfo xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">
+            <dsig:X509Data>
+              <dsig:X509Certificate>MIIDYjCCAkqgAwIBAgIGAXCwOK0RMA0GCSqGSIb3DQEBCwUAMFkxEzARBgoJkiaJ
+k/IsZAEZFgNjb20xFjAUBgoJkiaJk/IsZAEZFgZvcmFjbGUxFTATBgoJkiaJk/Is
+ZAEZFgVjbG91ZDETMBEGA1UEAxMKQ2xvdWQ5Q0EtMjAeFw0yMDAzMDYxNDIxMDla
+Fw0zMDAzMDYxNDIxMDlaMFcxEzARBgNVBAMTCnNzbERvbWFpbnMxDzANBgNVBAMT
+BkNsb3VkOTEvMC0GA1UEAxMmSENNU0ktNTdiY2MxMDE0N2RhNGE3MmI2NTU3YWZm
+ZTcyZWVmYTQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCOmeQImlOv
+jejmVNTb6S7HmJUUKPfKjrkjzxf2iwX4llCg2PvrP+202G4T6xfHTmCwCNZuophu
+TaNR44qWjNlcpvvEKn6LB/plHdNXHnEQzGWK7bFf/6tvuKGgsCqGIoq9tWD1ni/A
+fFshdi8dKhW2jZgX86HAOCvQvJ+NvOTmKbe4mrX0281ODC0dva5VGUX+zj96H69Q
+hLiBWpT4/fEad0KBeqFOcp4/bYZaE+2NTp8BYtsmsPVmXRIaiF7+LcdQh6x/1s08
+osa/7HqtRI4wPRNOSoKoED6iMvYPcB1nsCrWgvs66MruqTcYYL4Vy8kL9OBmVb+d
+oOVB2YvFGaQJAgMBAAGjMjAwMA8GA1UdDwEB/wQFAwMH+AAwHQYDVR0OBBYEFOdL
+aBHcHezBVB/qZG2GpzqgRX3IMA0GCSqGSIb3DQEBCwUAA4IBAQDML0L5e9RlD0I2
+YjV3lPBMmqgLw3uXsGwcT/OJ8r78t0MXxCRTtmJB1gCwY4Vxhg4euEHRla8xE4I1
+qFHfoFIDaZ6PDz2Sxl3fKH+ZMrM4LmexWq7Ll3MVaUerX/lsSSRu0xBIhX98gHSZ
+B6cpW80qAqq9igjbHovA9NRtOcOKWMEiIetcgqT85xXe4t6E9JnkFQS3XvZgbwqx
+jWFQq3prsmm9VlYsKHREthmMm3qCeo6HnA4BL+gOnl8ypgVm9cL54yyMbf34/t9v
+l0Klyr2eVM6vKpUuXlZB8Q96x97WUqQOWUInpyWZeFIUGFStv6rWyem8VFJBaCD6
+7cA4w0lC</dsig:X509Certificate>
+              <dsig:X509IssuerSerial>
+                <dsig:X509IssuerName>CN=Cloud9CA-2, DC=cloud, DC=oracle, DC=com</dsig:X509IssuerName>
+                <dsig:X509SerialNumber>1583504469265</dsig:X509SerialNumber>
+              </dsig:X509IssuerSerial>
+              <dsig:X509SubjectName>CN=HCMSI-57bcc10147da4a72b6557affe72eefa4, CN=Cloud9, CN=sslDomains</dsig:X509SubjectName>
+              <dsig:X509SKI>50toEdwd7MFUH+pkbYanOqBFfcg=</dsig:X509SKI>
+              <dsig:X509Certificate>MIIDazCCAlOgAwIBAgIIMdQl7kIMrv0wDQYJKoZIhvcNAQELBQAwWTETMBEGCgmS
+JomT8ixkARkWA2NvbTEWMBQGCgmSJomT8ixkARkWBm9yYWNsZTEVMBMGCgmSJomT
+8ixkARkWBWNsb3VkMRMwEQYDVQQDEwpDbG91ZDlDQS0yMCAXDTE2MDUyMTAyMTgw
+OVoYDzIxMTYwNDI3MDIxODA5WjBZMRMwEQYKCZImiZPyLGQBGRYDY29tMRYwFAYK
+CZImiZPyLGQBGRYGb3JhY2xlMRUwEwYKCZImiZPyLGQBGRYFY2xvdWQxEzARBgNV
+BAMTCkNsb3VkOUNBLTIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDP
+Zn2VAoMsIfWmIJks9exzK+DXaX6qYyBc12dRqDrRpC48v3CBeBchV/GT2E+mjcDp
+8Hzq8oIpwr9W5kwMja4PU3SPd4/0LB6WKbtLfHOnJxLg9EaT992UpbUGHaHlEq4o
+RAuVvPgDLp5sSspLZYEBKUh4vJXOyLitE1qsXn7mJNXRKTJZvrJKdfbs1dyTge3V
+3wk1rwY/wCWMKVgkqCgSzzWCGju8EZWoOrnzlR6BHkA0qZqeV4F7jDW8ucdv+Y20
+pOlOiaEbIg/ZFYGrZd5VWjlNvgLfU8P4C/YJLSkkcPHgoet3w4jI0S26efu59rVz
+gU9VsKnKtnqbDL99t81vAgMBAAGjNTAzMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYD
+VR0OBBYEFDMA8e55FI5kC12+guIE9xtcIXpFMA0GCSqGSIb3DQEBCwUAA4IBAQC4
+5tOVeqHxA8Bo/Rnv1SHHpULge3HyTC1XV9nmUdrj6g/U6rmbA5hVJ5LshgQ77qop
+O/YsaNHj5Ru1u/+8VOlZWpbn+kt3CDOuBUCe89CKBZT/KWEDkvtNl2qu16gOkhFn
+uTQk8NsARvwZZ6KtyPDmsbW4Nc/I5fKwPhdTaMjCV6Lh9RCG4kU77lbdwY3SaXlC
+BXXQyfPWMouCi7z1thJaF3cNGW4tnsibMR5ej9fJ9j6UvShxNgAIgjNDoihPlC6k
+0kW3QDR3bBjCHJX47505aIhckojH/eKsP2Or0eE/Ma4WNbndj0IXPE2ae5AVmC8/
+GRtwAmnoZPnt3g/I2m5j</dsig:X509Certificate>
+            </dsig:X509Data>
+          </dsig:KeyInfo>
+        </wsid:Identity>
+      </wsa:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService?WSDL=/META-INF/wsdl/ServiceException.wsdl</con:url><con:content><![CDATA[<definitions targetNamespace="http://xmlns.oracle.com/adf/svc/errors/" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://xmlns.oracle.com/adf/svc/errors/">
+  <types>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema">
+      <import namespace="http://xmlns.oracle.com/adf/svc/errors/" schemaLocation="https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService?XSD=/META-INF/wsdl/ServiceException.xsd"/>
+    </schema>
+  </types>
+  <message name="ServiceException">
+    <part name="ServiceErrorMessage" element="tns:ServiceErrorMessage"/>
+  </message>
+</definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService?XSD=/META-INF/wsdl/ServiceException.xsd</con:url><con:content><![CDATA[<schema elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/adf/svc/errors/" sdoJava:package="oracle.jbo.service.errors" xmlns:sdoJava="commonj.sdo/java" xmlns:tns="http://xmlns.oracle.com/adf/svc/errors/" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import namespace="commonj.sdo/java" schemaLocation="https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService?XSD=/xml/sdoJava.xsd"/>
+  <element name="ServiceErrorMessage" type="tns:ServiceErrorMessage"/>
+  <complexType name="ServiceMessage">
+    <sequence>
+      <element maxOccurs="1" minOccurs="0" name="code" type="string"/>
+      <element maxOccurs="1" minOccurs="0" name="message" type="string"/>
+      <element maxOccurs="1" minOccurs="0" name="severity" type="string"/>
+      <element maxOccurs="unbounded" minOccurs="0" name="detail" type="tns:ServiceMessage"/>
+    </sequence>
+  </complexType>
+  <complexType name="ServiceErrorMessage">
+    <complexContent>
+      <extension base="tns:ServiceMessage">
+        <sequence>
+          <element maxOccurs="1" minOccurs="0" name="sdoObject" type="anyType"/>
+          <element maxOccurs="1" minOccurs="0" name="exceptionClassName" type="string"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ServiceAttrValErrorMessage">
+    <complexContent>
+      <extension base="tns:ServiceErrorMessage">
+        <sequence>
+          <element maxOccurs="1" minOccurs="0" name="attributeName" type="string"/>
+          <element maxOccurs="1" minOccurs="0" name="attributeValue" type="anySimpleType"/>
+          <element maxOccurs="1" minOccurs="0" name="objectName" type="string"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ServiceRowValErrorMessage">
+    <complexContent>
+      <extension base="tns:ServiceErrorMessage">
+        <sequence>
+          <element maxOccurs="1" minOccurs="0" name="objectName" type="string"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ServiceDMLErrorMessage">
+    <complexContent>
+      <extension base="tns:ServiceErrorMessage">
+        <sequence>
+          <element maxOccurs="1" minOccurs="0" name="operation" type="string"/>
+          <element maxOccurs="1" minOccurs="0" name="statement" type="string"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+</schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService?XSD=/xml/sdoJava.xsd</con:url><con:content><![CDATA[<xsd:schema targetNamespace="commonj.sdo/java" xmlns:sdo="commonj.sdo" xmlns:sdoJava="commonj.sdo/java" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <xsd:import namespace="commonj.sdo" schemaLocation="https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService?XSD=/xml/sdoModel.xsd"/>
+  <xsd:attribute name="package" type="xsd:string"/>
+  <xsd:attribute name="instanceClass" type="xsd:string"/>
+  <xsd:attribute name="extendedInstanceClass" type="xsd:string"/>
+  <xsd:attribute name="nestedInterfaces" type="xsd:boolean"/>
+  <xsd:attribute name="javaClass" type="sdo:String"/>
+  <xsd:complexType name="JavaInfo">
+    <xsd:attribute name="javaClass" type="sdo:String"/>
+  </xsd:complexType>
+  <xsd:simpleType name="BooleanObject" sdoJava:instanceClass="java.lang.Boolean">
+    <xsd:restriction base="xsd:boolean"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="ByteObject" sdoJava:instanceClass="java.lang.Byte">
+    <xsd:restriction base="xsd:byte"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="CharacterObject" sdoJava:instanceClass="java.lang.Character">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="DoubleObject" sdoJava:instanceClass="java.lang.Double">
+    <xsd:restriction base="xsd:double"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="FloatObject" sdoJava:instanceClass="java.lang.Float">
+    <xsd:restriction base="xsd:float"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="IntObject" sdoJava:instanceClass="java.lang.Integer">
+    <xsd:restriction base="xsd:int"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="LongObject" sdoJava:instanceClass="java.lang.Long">
+    <xsd:restriction base="xsd:long"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="ShortObject" sdoJava:instanceClass="java.lang.Short">
+    <xsd:restriction base="xsd:short"/>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService?XSD=/xml/sdoModel.xsd</con:url><con:content><![CDATA[<xsd:schema elementFormDefault="qualified" targetNamespace="commonj.sdo" xsi:schemaLocation="commonj.sdo/xml sdoXML.xsd                   commonj.sdo/java sdoJava.xsd" xmlns:sdo="commonj.sdo" xmlns:sdoJava="commonj.sdo/java" xmlns:sdoXML="commonj.sdo/xml" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <xsd:include schemaLocation="https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService?XSD=/xml/datagraph.xsd"/>
+  <xsd:element name="types" type="sdo:Types"/>
+  <xsd:complexType name="Types">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="type" type="sdo:Type"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="dataObject" type="xsd:anyType"/>
+  <xsd:element name="type" type="sdo:Type"/>
+  <xsd:complexType name="Type">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="baseType" type="sdo:URI" sdoXML:propertyType="sdo:Type"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="property" type="sdo:Property"/>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="aliasName" type="sdo:String"/>
+      <xsd:any maxOccurs="unbounded" minOccurs="0" namespace="##other" processContents="lax"/>
+    </xsd:sequence>
+    <xsd:attribute name="name" type="xsd:ID" sdoXML:dataType="sdo:String"/>
+    <xsd:attribute name="uri" type="sdo:URI"/>
+    <xsd:attribute name="dataType" type="sdo:Boolean"/>
+    <xsd:attribute name="open" type="sdo:Boolean"/>
+    <xsd:attribute name="sequenced" type="sdo:Boolean"/>
+    <xsd:attribute name="abstract" type="sdo:Boolean"/>
+    <xsd:anyAttribute namespace="##any" processContents="lax"/>
+  </xsd:complexType>
+  <xsd:complexType name="Property">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="aliasName" type="sdo:String"/>
+      <xsd:any maxOccurs="unbounded" minOccurs="0" namespace="##other" processContents="lax"/>
+    </xsd:sequence>
+    <xsd:attribute name="name" type="sdo:String"/>
+    <xsd:attribute name="many" type="sdo:Boolean"/>
+    <xsd:attribute name="containment" type="sdo:Boolean"/>
+    <xsd:attribute name="default" type="sdo:String"/>
+    <xsd:attribute name="readOnly" type="sdo:Boolean"/>
+    <xsd:attribute name="type" type="sdo:URI" sdoXML:propertyType="sdo:Type"/>
+    <xsd:attribute name="opposite" type="sdo:URI" sdoXML:propertyType="sdo:Property"/>
+    <xsd:attribute name="nullable" type="sdo:Boolean"/>
+    <xsd:anyAttribute namespace="##any" processContents="lax"/>
+  </xsd:complexType>
+  <xsd:complexType abstract="true" name="DataObject"/>
+  <xsd:complexType abstract="true" name="TextType">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="text" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:simpleType name="Boolean" sdoJava:instanceClass="boolean">
+    <xsd:restriction base="xsd:boolean"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="Byte" sdoJava:instanceClass="byte">
+    <xsd:restriction base="xsd:byte"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="Bytes" sdoJava:instanceClass="byte[]">
+    <xsd:restriction base="xsd:hexBinary"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="Character" sdoJava:instanceClass="char">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="Date" sdoJava:instanceClass="java.util.Date">
+    <xsd:restriction base="xsd:dateTime"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="DateTime" sdoJava:instanceClass="java.lang.String">
+    <xsd:restriction base="xsd:dateTime"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="Day" sdoJava:instanceClass="java.lang.String">
+    <xsd:restriction base="xsd:gDay"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="Decimal" sdoJava:instanceClass="java.math.BigDecimal">
+    <xsd:restriction base="xsd:decimal"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="Double" sdoJava:instanceClass="double">
+    <xsd:restriction base="xsd:double"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="Duration" sdoJava:instanceClass="java.lang.String">
+    <xsd:restriction base="xsd:duration"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="Float" sdoJava:instanceClass="float">
+    <xsd:restriction base="xsd:float"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="Int" sdoJava:instanceClass="int">
+    <xsd:restriction base="xsd:int"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="Integer" sdoJava:instanceClass="java.math.BigInteger">
+    <xsd:restriction base="xsd:integer"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="Long" sdoJava:instanceClass="long">
+    <xsd:restriction base="xsd:long"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="Month" sdoJava:instanceClass="java.lang.String">
+    <xsd:restriction base="xsd:gMonth"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="MonthDay" sdoJava:instanceClass="java.lang.String">
+    <xsd:restriction base="xsd:gMonthDay"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="Object" sdoJava:instanceClass="java.lang.Object">
+    <xsd:union memberTypes="xsd:anyURI xsd:base64Binary xsd:boolean xsd:byte     xsd:date xsd:dateTime xsd:decimal xsd:double xsd:duration xsd:ENTITIES xsd:ENTITY xsd:float     xsd:gDay xsd:gMonth xsd:gMonthDay xsd:gYear xsd:gYearMonth xsd:hexBinary xsd:ID xsd:IDREF xsd:IDREFS     xsd:int xsd:integer xsd:language xsd:long xsd:Name xsd:NCName xsd:negativeInteger     xsd:NMTOKEN xsd:NMTOKENS xsd:nonNegativeInteger xsd:nonPositiveInteger     xsd:normalizedString xsd:NOTATION xsd:positiveInteger xsd:QName xsd:short xsd:string     xsd:time xsd:token xsd:unsignedByte xsd:unsignedInt xsd:unsignedLong xsd:unsignedShort"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="Short" sdoJava:instanceClass="short">
+    <xsd:restriction base="xsd:short"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="String" sdoJava:instanceClass="java.lang.String">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="Strings" sdoJava:instanceClass="java.util.List">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="Time" sdoJava:instanceClass="java.lang.String">
+    <xsd:restriction base="xsd:time"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="Year" sdoJava:instanceClass="java.lang.String">
+    <xsd:restriction base="xsd:gYear"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="YearMonth" sdoJava:instanceClass="java.lang.String">
+    <xsd:restriction base="xsd:gYearMonth"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="YearMonthDay" sdoJava:instanceClass="java.lang.String">
+    <xsd:restriction base="xsd:date"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="URI" sdoJava:instanceClass="java.lang.String">
+    <xsd:restriction base="xsd:anyURI"/>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService?XSD=/xml/datagraph.xsd</con:url><con:content><![CDATA[<xsd:schema targetNamespace="commonj.sdo" xmlns:sdo="commonj.sdo" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="datagraph" type="sdo:DataGraphType"/>
+  <xsd:complexType name="DataGraphType">
+    <xsd:complexContent>
+      <xsd:extension base="sdo:BaseDataGraphType">
+        <xsd:sequence>
+          <xsd:any maxOccurs="1" minOccurs="0" namespace="##other" processContents="lax"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType abstract="true" name="BaseDataGraphType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="models" type="sdo:ModelsType"/>
+      <xsd:element minOccurs="0" name="xsd" type="sdo:XSDType"/>
+      <xsd:element minOccurs="0" name="changeSummary" type="sdo:ChangeSummaryType"/>
+    </xsd:sequence>
+    <xsd:anyAttribute namespace="##other" processContents="lax"/>
+  </xsd:complexType>
+  <xsd:complexType name="ModelsType">
+    <xsd:annotation>
+      <xsd:documentation>Expected type is emof:Package.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:any maxOccurs="unbounded" minOccurs="0" namespace="##other" processContents="lax"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="XSDType">
+    <xsd:annotation>
+      <xsd:documentation>Expected type is xsd:schema.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:any maxOccurs="unbounded" minOccurs="0" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ChangeSummaryType">
+    <xsd:sequence>
+      <xsd:any maxOccurs="unbounded" minOccurs="0" namespace="##any" processContents="lax"/>
+    </xsd:sequence>
+    <xsd:attribute name="create" type="xsd:string"/>
+    <xsd:attribute name="delete" type="xsd:string"/>
+    <xsd:attribute name="logging" type="xsd:boolean"/>
+  </xsd:complexType>
+  <xsd:attribute name="ref" type="xsd:string"/>
+  <xsd:attribute name="unset" type="xsd:string"/>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService?XSD=/META-INF/oracle-webservices-async-fault-11_0.xsd</con:url><con:content><![CDATA[<schema targetNamespace="http://xmlns.oracle.com/oracleas/schema/oracle-fault-11_0" xmlns:orafault="http://xmlns.oracle.com/oracleas/schema/oracle-fault-11_0" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:complexType name="FaultType">
+    <xsd:sequence>
+      <xsd:element name="faultcode" type="xsd:QName"/>
+      <xsd:element name="faultstring" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="faultactor" type="xsd:anyURI"/>
+      <xsd:element minOccurs="0" name="detail" type="orafault:detail"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="detail">
+    <xsd:sequence>
+      <xsd:any maxOccurs="unbounded" minOccurs="0" namespace="##any" processContents="lax"/>
+    </xsd:sequence>
+    <xsd:anyAttribute namespace="##any" processContents="lax"/>
+  </xsd:complexType>
+  <xsd:element name="Fault" type="orafault:FaultType"/>
+</schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService?XSD=/oracle/apps/financials/commonModules/shared/model/erpIntegrationService/ErpObjectDFFUpdateService.xsd</con:url><con:content><![CDATA[<schema elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/types/" xmlns:ns0="http://xmlns.oracle.com/adf/svc/errors/" xmlns:ns1="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/" xmlns:tns="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/types/" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import namespace="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/" schemaLocation="https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService?XSD=/oracle/apps/financials/commonModules/shared/model/erpIntegrationService/DocumentDetails.xsd"/>
+  <import namespace="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/" schemaLocation="https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService?XSD=/oracle/apps/financials/commonModules/shared/model/erpIntegrationService/ErpObjectDetails.xsd"/>
+  <import namespace="http://xmlns.oracle.com/adf/svc/errors/" schemaLocation="https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService?XSD=/META-INF/wsdl/ServiceException.xsd"/>
+  <element name="updateDffEntityDetails">
+    <complexType>
+      <sequence>
+        <element maxOccurs="1" minOccurs="0" name="document" nillable="true" type="ns1:DocumentDetails"/>
+        <element maxOccurs="1" minOccurs="0" name="operationMode" nillable="true" type="string"/>
+        <element maxOccurs="1" minOccurs="0" name="object" nillable="true" type="ns1:ErpObjectDetails"/>
+        <element maxOccurs="1" minOccurs="0" name="notificationCode" nillable="true" type="string"/>
+        <element maxOccurs="1" minOccurs="0" name="callbackURL" nillable="true" type="string"/>
+      </sequence>
+    </complexType>
+  </element>
+  <element name="updateDffEntityDetailsResponse">
+    <complexType>
+      <sequence>
+        <element name="result" type="string"/>
+      </sequence>
+    </complexType>
+  </element>
+  <element name="updateDffEntityDetailsAsync">
+    <complexType>
+      <sequence>
+        <element maxOccurs="1" minOccurs="0" name="document" nillable="true" type="ns1:DocumentDetails"/>
+        <element name="operationMode" type="string"/>
+        <element maxOccurs="1" minOccurs="0" name="object" nillable="true" type="ns1:ErpObjectDetails"/>
+        <element maxOccurs="1" minOccurs="0" name="notificationCode" nillable="true" type="string"/>
+        <element maxOccurs="1" minOccurs="0" name="callbackURL" nillable="true" type="string"/>
+      </sequence>
+    </complexType>
+  </element>
+  <element name="updateDffEntityDetailsAsyncResponse">
+    <complexType>
+      <sequence>
+        <element name="result" type="string"/>
+      </sequence>
+    </complexType>
+  </element>
+</schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService?XSD=/oracle/apps/financials/commonModules/shared/model/erpIntegrationService/DocumentDetails.xsd</con:url><con:content><![CDATA[<xsd:schema elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/" sdoJava:package="oracle.apps.financials.commonModules.shared.model.erpIntegrationService" xmlns:ns0="http://xmlns.oracle.com/adf/svc/types/" xmlns:sdoJava="commonj.sdo/java" xmlns="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:annotation>
+    <xsd:documentation xmlns:oer="http://xmlns.oracle.com/oer">
+      <name>Document Information SDO</name>
+      <description>The document information that is uploaded to the Oracle
+                Universal Content Management. For example, filename, content
+                type, content, and author.</description>
+      <oer:attributes>
+        <oer:attribute description="The attribute holds the content of the document." name="Content"/>
+        <oer:attribute description="The attribute holds the name of the file specified by the document." name="FileName"/>
+        <oer:attribute description="The attribute holds the content type of the document." name="ContentType"/>
+        <oer:attribute description="The attribute holds the title of the document." name="DocumentTitle"/>
+        <oer:attribute description="The attribute holds the name of the author of the document." name="DocumentAuthor"/>
+        <oer:attribute description="The attribute holds the name of the security group securing the document." name="DocumentSecurityGroup"/>
+        <oer:attribute description="The attribute holds the account the document should belong to." name="DocumentAccount"/>
+        <oer:attribute description="The attribute holds the name of the document." name="DocumentName"/>
+        <oer:attribute description="The attribute holds the document identifier." name="DocumentId"/>
+      </oer:attributes>
+    </xsd:documentation>
+  </xsd:annotation>
+  <xsd:import namespace="http://xmlns.oracle.com/adf/svc/types/" schemaLocation="https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService?XSD=/META-INF/wsdl/BC4JService.xsd"/>
+  <xsd:import namespace="commonj.sdo/java" schemaLocation="https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService?XSD=/xml/sdoJava.xsd"/>
+  <xsd:complexType name="DocumentDetails">
+    <xsd:annotation>
+      <xsd:appinfo source="http://xmlns.oracle.com/adf/svc/metadata/">
+        <key xmlns="http://xmlns.oracle.com/adf/svc/metadata/">
+          <attribute>FileName</attribute>
+        </key>
+      </xsd:appinfo>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="Content" nillable="true" type="ns0:base64Binary-DataHandler"/>
+      <xsd:element name="FileName" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="ContentType" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="DocumentTitle" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="DocumentAuthor" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="DocumentSecurityGroup" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="DocumentAccount" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="DocumentName" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="DocumentId" nillable="true" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="documentDetails" type="DocumentDetails"/>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService?XSD=/META-INF/wsdl/BC4JService.xsd</con:url><con:content><![CDATA[<xsd:schema elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/adf/svc/types/" sdoJava:package="oracle.jbo.common.service.types" xmlns:errors="http://xmlns.oracle.com/adf/svc/errors/" xmlns:sdo="commonj.sdo" xmlns:sdoJava="commonj.sdo/java" xmlns:sdoXML="commonj.sdo/xml" xmlns="http://xmlns.oracle.com/adf/svc/types/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import namespace="http://xmlns.oracle.com/adf/svc/errors/" schemaLocation="https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService?XSD=/META-INF/wsdl/ServiceException.xsd"/>
+  <xsd:import namespace="commonj.sdo" schemaLocation="https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService?XSD=/xml/sdoModel.xsd"/>
+  <xsd:import namespace="commonj.sdo/java" schemaLocation="https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService?XSD=/xml/sdoJava.xsd"/>
+  <xsd:import namespace="commonj.sdo/xml" schemaLocation="https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService?XSD=/xml/sdoXML.xsd"/>
+  <xsd:element name="findCriteria" type="FindCriteria"/>
+  <xsd:complexType name="FindCriteria">
+    <xsd:sequence>
+      <xsd:element default="0" name="fetchStart" type="xsd:int"/>
+      <xsd:element default="-1" name="fetchSize" type="xsd:int"/>
+      <xsd:element minOccurs="0" name="filter" type="ViewCriteria"/>
+      <xsd:element minOccurs="0" name="sortOrder" type="SortOrder"/>
+      <xsd:element maxOccurs="500" minOccurs="0" name="findAttribute" type="xsd:string"/>
+      <xsd:element default="false" name="excludeAttribute" type="xsd:boolean"/>
+      <xsd:element maxOccurs="500" minOccurs="0" name="childFindCriteria" type="ChildFindCriteria"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ViewCriteria">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="conjunction" type="Conjunction"/>
+      <xsd:element maxOccurs="500" name="group" type="ViewCriteriaRow"/>
+      <xsd:element maxOccurs="500" minOccurs="0" name="nested" type="ViewCriteria"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ViewCriteriaRow">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="conjunction" type="Conjunction"/>
+      <xsd:element default="false" name="upperCaseCompare" type="xsd:boolean"/>
+      <xsd:element maxOccurs="500" name="item" type="ViewCriteriaItem"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ViewCriteriaItem">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="conjunction" type="Conjunction"/>
+      <xsd:element default="false" name="upperCaseCompare" type="xsd:boolean"/>
+      <xsd:element name="attribute" type="xsd:string"/>
+      <xsd:element name="operator" type="xsd:string"/>
+      <xsd:choice>
+        <xsd:element maxOccurs="500" minOccurs="0" name="value" type="xsd:anySimpleType"/>
+        <xsd:element name="nested" type="ViewCriteria"/>
+      </xsd:choice>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:simpleType name="Conjunction" sdoJava:instanceClass="java.lang.String">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="And"/>
+      <xsd:enumeration value="Or"/>
+      <xsd:enumeration value="Not"/>
+      <xsd:enumeration value="AndNot"/>
+      <xsd:enumeration value="OrNot"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:complexType name="SortOrder">
+    <xsd:sequence>
+      <xsd:element maxOccurs="500" name="sortAttribute" type="SortAttribute"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="SortAttribute">
+    <xsd:sequence>
+      <xsd:element name="name" type="xsd:string"/>
+      <xsd:element default="false" name="descending" type="xsd:boolean"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ChildFindCriteria">
+    <xsd:complexContent>
+      <xsd:extension base="FindCriteria">
+        <xsd:sequence>
+          <xsd:element name="childAttrName" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:simpleType name="ChangeOperation" sdoJava:instanceClass="java.lang.String">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Create"/>
+      <xsd:enumeration value="Update"/>
+      <xsd:enumeration value="Merge"/>
+      <xsd:enumeration value="Delete"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:element name="findControl" type="FindControl"/>
+  <xsd:complexType name="FindControl">
+    <xsd:sequence>
+      <xsd:element default="false" name="retrieveAllTranslations" type="xsd:boolean"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="processControl" type="ProcessControl"/>
+  <xsd:complexType name="ProcessControl">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="returnMode" type="ReturnMode"/>
+      <xsd:element minOccurs="0" name="exceptionReturnMode" type="ReturnMode"/>
+      <xsd:element default="false" name="partialFailureAllowed" type="xsd:boolean"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:simpleType name="ReturnMode" sdoJava:instanceClass="java.lang.String">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Full"/>
+      <xsd:enumeration value="Key"/>
+      <xsd:enumeration value="None"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="base64Binary-DataHandler" sdoJava:instanceClass="javax.activation.DataHandler">
+    <xsd:restriction base="xsd:base64Binary"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="dateTime-Timestamp" sdoJava:instanceClass="java.sql.Timestamp">
+    <xsd:restriction base="xsd:dateTime"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="time-Time" sdoJava:instanceClass="java.sql.Time">
+    <xsd:restriction base="xsd:time"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="date-Date" sdoJava:instanceClass="java.sql.Date">
+    <xsd:restriction base="xsd:date"/>
+  </xsd:simpleType>
+  <xsd:complexType name="AmountType">
+    <xsd:simpleContent>
+      <xsd:extension base="xsd:decimal">
+        <xsd:attribute name="currencyCode" type="xsd:normalizedString" use="optional"/>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="MeasureType">
+    <xsd:simpleContent>
+      <xsd:extension base="xsd:decimal">
+        <xsd:attribute name="unitCode" type="xsd:normalizedString" use="optional"/>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:complexType name="MethodResult">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Message" type="errors:ServiceMessage"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="BigDecimalResult">
+    <xsd:complexContent>
+      <xsd:extension base="MethodResult">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Value" type="xsd:decimal"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="BigIntegerResult">
+    <xsd:complexContent>
+      <xsd:extension base="MethodResult">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Value" type="xsd:integer"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="BooleanResult">
+    <xsd:complexContent>
+      <xsd:extension base="MethodResult">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Value" type="xsd:boolean"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="ByteResult">
+    <xsd:complexContent>
+      <xsd:extension base="MethodResult">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Value" type="xsd:byte"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="BytesResult">
+    <xsd:complexContent>
+      <xsd:extension base="MethodResult">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Value" type="xsd:hexBinary"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="TimestampResult">
+    <xsd:complexContent>
+      <xsd:extension base="MethodResult">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Value" type="xsd:dateTime" sdoXML:dataType="dateTime-Timestamp"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="TimeResult">
+    <xsd:complexContent>
+      <xsd:extension base="MethodResult">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Value" type="xsd:time" sdoXML:dataType="time-Time"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="DateResult">
+    <xsd:complexContent>
+      <xsd:extension base="MethodResult">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Value" type="xsd:date" sdoXML:dataType="date-Date"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="DoubleResult">
+    <xsd:complexContent>
+      <xsd:extension base="MethodResult">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Value" type="xsd:double"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="FloatResult">
+    <xsd:complexContent>
+      <xsd:extension base="MethodResult">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Value" type="xsd:float"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="IntegerResult">
+    <xsd:complexContent>
+      <xsd:extension base="MethodResult">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Value" type="xsd:int"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="LongResult">
+    <xsd:complexContent>
+      <xsd:extension base="MethodResult">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Value" type="xsd:long"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="ShortResult">
+    <xsd:complexContent>
+      <xsd:extension base="MethodResult">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Value" type="xsd:short"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="StringResult">
+    <xsd:complexContent>
+      <xsd:extension base="MethodResult">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Value" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="DataHandlerResult">
+    <xsd:complexContent>
+      <xsd:extension base="MethodResult">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Value" type="base64Binary-DataHandler"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="DataObjectResult">
+    <xsd:complexContent>
+      <xsd:extension base="MethodResult">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="Value" type="xsd:anyType" sdoXML:dataType="sdo:DataObject"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="ObjAttrHints">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="objHint" type="CtrlHint"/>
+      <xsd:element maxOccurs="unbounded" name="attrHints" type="AttrCtrlHints"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="AttrCtrlHints">
+    <xsd:sequence>
+      <xsd:element name="attrName" type="xsd:string"/>
+      <xsd:element maxOccurs="unbounded" name="ctrlHint" type="CtrlHint"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="CtrlHint">
+    <xsd:sequence>
+      <xsd:element name="key" type="xsd:string"/>
+      <xsd:element name="value" type="xsd:anySimpleType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ServiceViewInfo">
+    <xsd:sequence>
+      <xsd:element name="name" type="xsd:string"/>
+      <xsd:element name="typeName" type="xsd:string"/>
+      <xsd:element default="false" minOccurs="0" name="canCreate" type="xsd:boolean"/>
+      <xsd:element default="false" minOccurs="0" name="canUpdate" type="xsd:boolean"/>
+      <xsd:element default="false" minOccurs="0" name="canMerge" type="xsd:boolean"/>
+      <xsd:element default="false" minOccurs="0" name="canDelete" type="xsd:boolean"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService?XSD=/xml/sdoXML.xsd</con:url><con:content><![CDATA[<xsd:schema targetNamespace="commonj.sdo/xml" xmlns:sdo="commonj.sdo" xmlns:sdoXML="commonj.sdo/xml" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import namespace="commonj.sdo" schemaLocation="https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService?XSD=/xml/sdoModel.xsd"/>
+  <xsd:attribute name="name" type="xsd:string"/>
+  <xsd:attribute name="propertyType" type="xsd:QName"/>
+  <xsd:attribute name="oppositeProperty" type="xsd:string"/>
+  <xsd:attribute name="sequence" type="xsd:boolean"/>
+  <xsd:attribute name="string" type="xsd:boolean"/>
+  <xsd:attribute name="dataType" type="xsd:QName"/>
+  <xsd:attribute name="aliasName" type="xsd:string"/>
+  <xsd:attribute name="readOnly" type="xsd:boolean"/>
+  <xsd:attribute name="many" type="xsd:boolean"/>
+  <xsd:attribute name="xmlElement" type="sdo:Boolean"/>
+  <xsd:complexType name="XMLInfo">
+    <xsd:attribute name="xmlElement" type="sdo:Boolean"/>
+  </xsd:complexType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService?XSD=/oracle/apps/financials/commonModules/shared/model/erpIntegrationService/ErpObjectDetails.xsd</con:url><con:content><![CDATA[<xsd:schema elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/" sdoJava:package="oracle.apps.financials.commonModules.shared.model.erpIntegrationService" xmlns:sdoJava="commonj.sdo/java" xmlns="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:annotation>
+    <xsd:documentation xmlns:oer="http://xmlns.oracle.com/oer">
+      <name>Object Information SDO</name>
+      <description>Object details containing information like entity name,context value, user key values and name value pairs of DFF atributes</description>
+      <oer:attributes>
+        <oer:attribute description="Entity Name of the ERP Object" name="EntityName"/>
+        <oer:attribute description="Context value of the DFF Object" name="ContextValue"/>
+        <oer:attribute description="User key value" name="UserKeyA"/>
+        <oer:attribute description="User key value" name="UserKeyB"/>
+        <oer:attribute description="User key value" name="UserKeyC"/>
+        <oer:attribute description="User key value" name="UserKeyD"/>
+        <oer:attribute description="User key value" name="UserKeyE"/>
+        <oer:attribute description="User key value" name="UserKeyF"/>
+        <oer:attribute description="User key value" name="UserKeyG"/>
+        <oer:attribute description="User key value" name="UserKeyH"/>
+        <oer:attribute description="List of name value pairs of DFF attributes to be updated" name="DFFAttributes"/>
+      </oer:attributes>
+    </xsd:documentation>
+  </xsd:annotation>
+  <xsd:import namespace="commonj.sdo/java" schemaLocation="https://fa-eoyu-dev1-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmService/ErpObjectDFFUpdateService?XSD=/xml/sdoJava.xsd"/>
+  <xsd:complexType name="ErpObjectDetails">
+    <xsd:annotation>
+      <xsd:appinfo source="http://xmlns.oracle.com/adf/svc/metadata/">
+        <key xmlns="http://xmlns.oracle.com/adf/svc/metadata/">
+          <attribute>EntityName</attribute>
+        </key>
+      </xsd:appinfo>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="EntityName" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="ContextValue" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="UserKeyA" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="UserKeyB" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="UserKeyC" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="UserKeyD" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="UserKeyE" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="UserKeyF" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="UserKeyG" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="UserKeyH" nillable="true" type="xsd:string"/>
+      <xsd:element minOccurs="0" name="DFFAttributes" nillable="true" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="erpObjectDetails" type="ErpObjectDetails"/>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints/><con:operation id="e9d7e065-2b40-43d3-bee1-f765a7ffd713" isOneWay="false" action="http://xmlns.oracle.com/oracleas/schema/oracle-fault-11_0/Fault" name="onFault" bindingOperationName="onFault" type="One-Way" inputName="" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="40fab202-925b-43e2-9470-acaaee4219cd" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:orac="http://xmlns.oracle.com/oracleas/schema/oracle-fault-11_0">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <orac:Fault>\r
+         <faultcode>?</faultcode>\r
+         <faultstring>?</faultstring>\r
+         <!--Optional:-->\r
+         <faultactor>?</faultactor>\r
+         <!--Optional:-->\r
+         <detail>\r
+            <!--You may enter ANY elements at this point-->\r
+         </detail>\r
+      </orac:Fault>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://xmlns.oracle.com/oracleas/schema/oracle-fault-11_0/Fault"/></con:call></con:operation><con:operation id="18522e49-a123-4fad-bf84-40f1e1fcf964" isOneWay="false" action="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/updateDffEntityDetailsAsyncResponse" name="updateDffEntityDetailsAsyncResponse" bindingOperationName="updateDffEntityDetailsAsyncResponse" type="One-Way" inputName="" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d36c869e-3a13-4829-a991-4a5af9d91481" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:typ="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/types/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <typ:updateDffEntityDetailsAsyncResponse>\r
+         <typ:result>?</typ:result>\r
+      </typ:updateDffEntityDetailsAsyncResponse>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/updateDffEntityDetailsAsyncResponse"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
